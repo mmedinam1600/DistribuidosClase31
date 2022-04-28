@@ -11,17 +11,8 @@ public class PruebaRectangulo {
     ancho = rect1.inferiorDerecha().abcisa() - rect1.superiorIzquierda().abcisa();
     System.out.println("El área del rectángulo es = " + ancho*alto);
 
-    int vertices = 8;
-    int high = 100;
-    int low = -100;
-    PoligonoIrreg poli1 = new PoligonoIrreg();
-    for (int i = 0; i < vertices; i++) {
-      poli1.anadeVertice(new Coordenada(new Random().nextInt(high-low) + low, new Random().nextInt(high-low) + low));
-    }
-    System.out.println("\n\nConjunto de vértices:");
-    System.out.println(poli1);
-    poli1.ordenaVertices();
-    System.out.println("\nVertices ordenados:");
-    System.out.println(poli1);
+
+    Circulo circle = new Circulo(new Coordenada(5,9),10);
+    System.out.println("\n\n" + circle);
   }
 }
